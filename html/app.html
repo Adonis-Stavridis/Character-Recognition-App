@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta name="description" content="Projet POO"/>
+	<meta name="author" content="Adonis Stavridis"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"/>
+	<meta content="text/html; charset=UTF-8" http-equiv="contenttype"/>
+	<link rel="stylesheet" type="text/css" title="Basic Page Style"
+	href="../css/all.css"/>
+	<link rel="icon" type="image/icon" href="../images/logo.ico"/>
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+  <script type="text/javascript" src="../javascript/dessin.js"></script>
+	<script type="text/javascript" src="../javascript/caractere.js"></script>
+	<script type="text/javascript" src="../javascript/lettres.js"></script>
+	<script type="text/javascript" src="../javascript/chiffres.js"></script>
+	<script type="text/javascript" src="../javascript/app.js"></script>
+	<title>OOP Project</title>
+</head>
+
+<body>
+
+  <div class="app">
+		<div class="canvasDiv">
+			<!--Placement du canvas-->
+		</div>
+
+		<div class="text">
+			<h1>Draw a character in the canvas</h1>
+			<button class="effacer">Clear</button>
+			<div class="choix">
+				<button class="modif_choix">Change the type of character</button>
+				<h2>The character is a:</h2>
+				<h3></h3>
+				<p>Possible characters are:</p>
+				<p class="cara_poss">
+					<!--Placement des caractrères possibles-->
+				</p>
+			</div>
+			<button class="rechercher">Search for the character</button>
+		</div>
+    <div class="loader"></div>
+
+		<div class="resultats">
+	    <h1>Results</h1>
+			<button class="confirm">Store</button>
+	    <button class="retour">Back</button>
+	    <div>
+	      <table>
+					<tr>
+						<th>Character</th>
+						<th>Score</th>
+					</tr>
+				</table>
+	    </div>
+	  </div>
+  </div>
+
+</body>
+
+</html>

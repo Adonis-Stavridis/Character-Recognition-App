@@ -1,0 +1,248 @@
+body {
+	background-color: darkgrey;
+	padding: 10px;
+	margin: 0;
+}
+
+.menu {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start {
+	text-align: center;
+  max-width: 50%;
+}
+
+.auteurs {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: "Arial";
+}
+
+h2 {
+  font-family: "Arial";
+  margin: 10px 0px 10px 0px;
+}
+
+h3 {
+  font-family: "Arial";
+  color: mediumseagreen;
+  background-color: white;
+  border-left: 3px solid mediumseagreen;
+  margin: 10px;
+  padding: 3px;
+}
+
+button {
+	color: dodgerblue;
+	font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border: 2px solid dodgerblue;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.app {
+	display: none;
+	flex-direction: row;
+}
+
+.canvasDiv {
+  margin: 5px;
+  width: 50vw;
+  height: 95vh;
+  min-width: 50vw;
+  min-height: 95vh;
+}
+
+canvas {
+  background-color: snow;
+  background-image: linear-gradient(to bottom right, darkgrey, snow);
+  border: 2px solid dodgerblue;
+  border-radius: 20px;
+  box-shadow: 0 10px 16px;
+}
+
+div.text, div.resultats {
+  margin: 5px;
+  margin-left: 15px;
+	width: 100%;
+}
+
+button.effacer {
+  margin: 5px;
+  width: 98%;
+  color: tomato;
+  border-color: tomato;
+}
+
+button.effacer:hover {
+  background-color: tomato;
+  color: white;
+}
+
+button.rechercher {
+  margin: 5px;
+  width: 98%;
+  font-size: 24px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.choix {
+  margin: 20px 5px 20px 5px;
+  padding: 10px;
+  background-color: beige;
+  border: 2px solid mediumseagreen;
+  border-radius: 10px;
+}
+
+.choix button {
+  margin: 5px;
+  width: 98%;
+  color: mediumseagreen;
+  border-color: mediumseagreen;
+}
+
+.choix button:hover {
+  background-color: mediumseagreen;
+  color: white;
+}
+
+p {
+  margin: 5px;
+  font-family: "Arial";
+  text-align: justify;
+}
+
+.resultats {
+  display: none;
+  margin: 5px;
+  margin-left: 15px;
+}
+
+button.confirm {
+	margin: 5px;
+	position: absolute;
+	top: 4%;
+	right: 12%;
+	color: #4CAF50;
+	border: 2px solid #4CAF50;
+}
+
+button.confirm:hover {
+	color: white;
+	background-color: #4CAF50;
+}
+
+button.retour {
+  margin: 5px;
+	position: absolute;
+	top: 4%;
+	right: 2%;
+}
+
+.loader {
+	position: absolute;
+	display: none;
+	bottom: 5%;
+	right: 2%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+	border: 5px solid snow;
+}
+
+th, td {
+  text-align: center;
+  padding: 4px;
+}
+
+tr.pos {
+	background-color: #4CAF50;
+	color: snow;
+}
+
+tr.neg {
+	background-color: #282828;
+	color: snow;
+}
+
+tr.res td {
+	background-color: gold;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px;
+}
+
+th {
+  background-color: dodgerblue;
+  color: white;
+	font-size: 18px;
+	padding: 10px;
+}
+
+div.mot {
+	display: flex;
+	background-color: #282828;
+	color: gold;
+	border: 2px solid gold;
+	border-radius: 5px;
+	margin: 20px 5px 20px 5px;
+	padding: 10px;
+}
+
+div.mot p {
+	font-size: 40px;
+	float: left;
+	width: 70%;
+	overflow: auto;
+}
+
+div.mot button {
+	float: right;
+	width: 30%;
+	border-color: tomato;
+	color: tomato;
+}
+
+div.mot button:hover {
+	background-color: tomato;
+	color: white;
+}
