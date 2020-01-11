@@ -129,7 +129,7 @@ $(document).ready(function(){
         var info = dessin.infoCanvas();
         if (info[0].length >= dessin.context.canvas.width * dessin.context.canvas.height * 0.3) {
           localStorage.setItem("state","app");
-          alert("Calm dow Bob Ross! I recognize characters not paintings!");
+          alert("Calm down Bob Ross! I recognize characters not paintings!");
           $(".app").css("display","none");
           $(location).attr("href", "app.html");
         }
