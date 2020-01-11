@@ -129,7 +129,7 @@ $(document).ready(function(){
         var info = dessin.infoCanvas();
         if (info[0].length >= dessin.context.canvas.width * dessin.context.canvas.height * 0.3) {
           localStorage.setItem("state","app");
-          alert("Calm dow Bob Ross! I recognise characters not paintings!");
+          alert("Calm dow Bob Ross! I recognize characters not paintings!");
           $(".app").css("display","none");
           $(location).attr("href", "app.html");
         }
@@ -138,7 +138,7 @@ $(document).ready(function(){
         var comp = dessin.echelle(info);
         if (comp === undefined) {
           localStorage.setItem("state","app");
-          alert("I need to take my glasses to recognise this character!\nMaybe draw something bigger!");
+          alert("I need to take my glasses to recognize this character!\nMaybe draw something bigger!");
           $(".app").css("display","none");
           $(location).attr("href", "app.html");
         }
