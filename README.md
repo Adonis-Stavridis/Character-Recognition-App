@@ -6,6 +6,8 @@ This a website where you can draw characters and the application will try to rec
 
 It was built using **JavaScript**, **HTML5** and **CSS3**.
 
+Direct link to the website: https://adonis-stavridis.github.io/Character-Recognition-App/
+
 ----
 
 ### Overview
